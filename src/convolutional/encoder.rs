@@ -73,14 +73,6 @@ impl ConvolutionalEncoder {
         
         output
     }
-    
-    pub fn get_state(&self) -> u32 {
-        self.state
-    }
-    
-    pub fn get_rate(&self) -> (usize, usize) {
-        (1, self.rate_denominator)
-    }
 }
 
 #[cfg(test)]

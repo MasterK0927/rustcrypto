@@ -142,8 +142,9 @@ impl Cipher {
         
         message.bytes()
             .enumerate()
-            .map(|(i, b)| (b ^ key_bytes[i % key_bytes.len()]) as char)
-            .collect()
+            .map(|(i, b)| format!("{:02x}", b ^ key_bytes[i % key_bytes.len()]))
+            .collect::<Vec<_>>()
+            .join("")
     }
 }
 
