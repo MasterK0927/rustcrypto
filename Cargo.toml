@@ -1,0 +1,11 @@
+[package]
+name = "codecrypt"
+version = "0.1.0"
+edition = "2021"
+authors = ["Keshav <keshavagarwal12325@gmail.com>"]
+description = "A CLI tool for convolutional coding and basic cryptography"
+
+[dependencies]
+clap = { version = "4.4", features = ["derive"] }
+bitvec = "1.0"
+rand = "0.8"
